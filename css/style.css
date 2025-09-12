@@ -72,17 +72,17 @@ h1, h2, h4, h5, h6 {
 
 ::-webkit-selection {
   color: #fff;
-  background: #F14E95;
+  background: #644B3C;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #F14E95;
+  background: #644B3C;
 }
 
 ::selection {
   color: #fff;
-  background: #F14E95;
+  background: #644B3C;
 }
 
 .fh5co-nav {
@@ -1139,7 +1139,7 @@ form label {
   font-size: 60px;
   margin-bottom: 10px;
   line-height: 1.5;
-  font-weight: bold;
+  /* font-weight: bold; */
   color:#644B3C;
   
 }
@@ -1333,7 +1333,7 @@ form label {
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
-  background: #F14E95;
+  background: #644B3C;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1377,7 +1377,7 @@ form label {
 }
 .owl-carousel .owl-controls .owl-dot.active span {
   background: transparent;
-  border: 2px solid #F14E95;
+  border: 2px solid #644B3C;
 }
 
 #fh5co-offcanvas {
@@ -1604,8 +1604,8 @@ form label {
 }
 
 .btn {
-  margin-right: 4px;
-  margin-bottom: 4px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   font-family: "Work Sans", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -1626,21 +1626,25 @@ form label {
 }
 
 .btn-primary {
-  background: #F14E95;
+  background: #644B3C;
   color: #fff;
+  padding: 15px 20px;
+  border-radius: 3px;
+  align-items:end;
+  
   
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #f366a3 !important;
-  border-color: #f366a3 !important;
+  background: #2f241d !important;
+  
 }
 .btn-primary.btn-outline {
   background: transparent;
   color:#644B3C;
-  border: 2px solid #F14E95;
+  
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #F14E95;
+  background: #644B3C;
   color: #fff;
 }
 
