@@ -351,7 +351,7 @@ h1, h2, h4, h5, h6 {
 }
 
 .fh5co-cover {
-  height: 900px;
+  height:100%;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
