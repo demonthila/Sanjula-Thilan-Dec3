@@ -4,6 +4,9 @@
 * 	Template Style 
 *
 * ======================================================= */
+
+  html { scroll-behavior: smooth; }
+
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
