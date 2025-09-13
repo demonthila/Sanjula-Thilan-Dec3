@@ -13,7 +13,41 @@
   height: 0;
   overflow: hidden;
 }
+.owl-carousel .item figure img {
+  width: 50%;
+  max-height: 800px;       /* Adjust height as needed */
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
 
+/* Position arrows outside the images */
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.owl-prev {
+  left: -50px; /* Adjust distance from carousel */
+}
+
+.owl-next {
+  right: -50px; /* Adjust distance from carousel */
+}
+
+/* Optional: hover effect */
+.owl-prev:hover, .owl-next:hover {
+  background: rgba(0,0,0,0.7);
+}
 .iframe-container iframe {
   position: absolute;
   top: 0;
@@ -317,38 +351,11 @@ h1, h2, h4, h5, h6 {
 }
 
 .fh5co-cover {
+  height: 900px;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  height: 100vh;               /* Full viewport height instead of fixed 900px */
-  background-size: cover;      /* Cover the entire container */
-  background-position: center center; /* Center image horizontally and vertically */
-  background-repeat: no-repeat;
-}
-
-/* Tablet view */
-@media screen and (max-width: 992px) {
-  .fh5co-cover {
-    background-position: center top; /* Shift image focus to top */
-    height: 80vh;                    /* Slightly shorter hero */
-  }
-}
-
-/* Mobile view */
-@media screen and (max-width: 576px) {
-  .fh5co-cover {
-    background-position: center top; /* Keep main subject visible */
-    height: 60vh;                    /* Shorter hero for small screens */
-  }
-  .fh5co-cover .container {
-    padding-top: 40px;               /* Adjust spacing for text/buttons */
-  }
-  .fh5co-cover h1 {
-    font-size: 24px;                 /* Smaller text for mobile */
-  }
-  .fh5co-cover .btn {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
 }
 .fh5co-cover .overlay {
 z-index: 0;
@@ -368,6 +375,7 @@ background: linear-gradient(
 .fh5co-cover > .fh5co-container {
   position: relative;
   z-index: 10;
+  
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover {
@@ -392,6 +400,7 @@ background: linear-gradient(
 @media screen and (max-width: 768px) {
   .fh5co-cover.fh5co-cover-sm {
     height: 400px;
+    background-position: center center;
   }
 }
 .fh5co-cover.fh5co-cover-sm .display-t,

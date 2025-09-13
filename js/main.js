@@ -17,6 +17,8 @@
 		});
 
 	};
+	
+
 
 
 	var offcanvasMenu = function() {
@@ -227,6 +229,7 @@
 		counter();
 		counterWayPoint();
 	});
+	
 
 
 }());
